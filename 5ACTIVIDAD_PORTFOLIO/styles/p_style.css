@@ -1,0 +1,213 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	font-family: verdana;
+}
+
+h1{
+	background-color: rgba(255,70,70,0.3);
+	height: 10%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	font-size: 50px;
+	color: white;
+	border-style: outset;
+}
+
+#header {
+     margin:auto;
+	 width:75%;
+	 height: 5%;
+	 font-family:Arial, Helvetica, sans-serif;
+	 border-style: ridge;
+}
+			
+ul, ol {
+	list-style:none;
+}
+			
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightgrey;
+	height: 100%;
+}
+			
+.nav li a {
+	background-color:lightgrey;
+	color:black;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+			
+.nav li a:hover {
+	background: black;
+    color: red;
+    box-shadow: inset 0 0 0 3px lightblue;
+}
+			
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+.nav li:hover > ul {
+	display:block;
+}
+			
+.nav li ul li {
+	position:relative;
+}
+			
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+#paragraph {
+	display:flex;
+	align-items:top;
+	position: relative;
+	top: 400px;
+	justify-content: space-evenly;
+}
+
+p {
+	color: red;
+}
+
+#image2 {
+	border-style: outset;
+}
+
+#image {
+	border-style: outset;
+}
+
+#footer {
+		padding: 10px;
+		color: black;
+		background-color: rgba(232,232,232,0.3);
+		text-align: center;
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+}
+
+h2 {
+	color: red;
+}
+
+#page1 {
+	background-image: url("fondo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#page2 {
+	background-image: url("skyrim.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.social {
+		position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+		left:0px; /* Establecemos la barra en la izquierda */
+		top: 350px; /* Bajamos la barra 350px de arriba a abajo */
+		z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+		top: 300px;
+		width: 100%;
+}
+ 
+	.social ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 20px 25px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+		width: 80px;
+		height: 80px;
+}
+ 
+	.social ul li .icon-facebook {
+		background: #3b5998; 
+		font-size: 15px;
+}
+
+
+	.social ul li .icon-instagram {
+		background: grey;
+		font-size: 15px;
+}
+
+
+	.social ul li .icon-mail {
+		background: white;
+		font-size: 15px;
+}
+ 
+	.social ul li a:hover {
+		background: red; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 20px 35px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+
+#seccion1 {
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: 100px auto;
+	
+}
+
+#seccion2 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 200px;
+}
+
+video{
+	 width: 320px;
+	 height: 240px;
+	 transition: 0.5s ease all;
+}
+
+video:hover{
+		transform: scale(1.2);
+}
+
+
+#caja {
+	background-color: rgba(100,165,187,0.4);
+	height: 65%;
+	margin-top: 120px;
+}
